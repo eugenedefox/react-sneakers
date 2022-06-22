@@ -17,26 +17,39 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
   max-width: 1080px;
-  margin: 50px ,auto;
+  margin: 50px  auto;
   
   
 }
 header {
+  border-bottom: 1px solid #EAEAEA;
+  display: flex;
+  
  h3{
   text-transform: uppercase;
  }
   justify-content: space-between;
   align-items: center;
-  border-bottom:1px solid eaeaea;
+  border:1px, solid, eaeaea;
   display: flex;
   justify-content: space-between;
-	
+
   .headerLeft{
+    display: flex;
+    justify-content: space-between;
+    img {
+    margin-right: 15px;
+  }
 	h3,
 	p{
 	  margin: 0;
 	}
   }
+}
+
+.headerRight{
+  display: flex;
+  justify-content: space-between;
 }
 
 .content{
@@ -116,7 +129,7 @@ z-index: 2;
 padding: 30px;
 
   .cartTotalBlock{
-    button{
+    .button{
       width: 100%;
       height: 55px;
       background: #9DD558;

@@ -115,11 +115,16 @@ cursor: pointer;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;//TODO:
+  
+}
+.items{
+  flex: 1;
 }
 .drawer{
 display:flex;
 flex-direction: column;
 position: absolute;
+justify-content: space-between;
 width: 420px;
 background: #FFFFFF;
 height: 100%;
@@ -129,7 +134,21 @@ z-index: 2;
 padding: 30px;
 
   .cartTotalBlock{
-    .button{
+    li{
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+    div{
+      flex: 1; // всю ширину занимает
+      height: 1px;
+      border-bottom: 1px dashed #dfdfdf;
+      position: relative;
+      top:-4px;
+      margin: 0 7px;
+    }
+//TODO:
+    button{
       width: 100%;
       height: 55px;
       background: #9DD558;
@@ -139,20 +158,11 @@ padding: 30px;
       font-size: 15px;
       cursor: pointer;
       }
-	li{
-	  display: flex;
-	  align-items: flex-end;
-    margin-bottom: 20px;
-	}
-	  div{
-	  flex: 1; // всю ширину занимает
-	  height: 1px;
-	  border-bottom: 1px solid dashed #ff0303;
-	  position: relative;
-	  top:-4px;
-	  margin: 0 7px;
+    h2{
+      margin: 0;
+    }
 	  
-	 }
+	
 	//TODO:
 	li{
 	  display: flex;
@@ -173,10 +183,8 @@ h2{
   //TODO:
   padding: 20px;
   margin-bottom: 40px;
-
-.items{
-	flex:1;
-}
+ 
+ 
 
   .cartItemImg{
 	height: 70px;

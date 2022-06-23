@@ -47,7 +47,10 @@ function App() {
 			<b>10 500 грн</b>
 		</li>
 	</ul>
-	<button>Оформить заказ</button>
+	<button className="greenButton" >Оформить заказ
+		 <img
+		 src="img/arrow.svg" alt="Arrow" />
+		 </button>
 </div>			
 
 		

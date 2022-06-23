@@ -8,7 +8,7 @@ function App() {
 	
 	<div className="overlay">
 		<div className="drawer">
-			<h2 className="mb-30" >Корзина</h2>
+			<h2 className="d-flex justify-between mb-30 " >Корзина <img  width={32} height={32} className="removeBtn cu-p" src="/img/btn-remove.svg" alt="Remove" /></h2>
 
 		<div className="items">
 			<div className="cardItem d-flex align-center">

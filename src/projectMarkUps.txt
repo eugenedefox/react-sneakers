@@ -1,0 +1,66 @@
+При работе с mackapi нужно убирать запятые (в конце  image и после } в конце ) и держать всё в кавычках 
+
+[
+  {
+    "title": "Мужские кроссовки Nike",
+    "price": 2500,
+    "imageUrl": "/img/sneakers/sneaker1.jpg"
+  },
+  {
+    "title": "Мужские Кроссовки Nike Air Max 270",
+    "price": 3000,
+    "imageUrl": "/img/sneakers/sneaker2.jpg"
+  },
+  {
+    "title": "Мужские Кроссовки Nike Blazer Mid Suede",
+    "price": 4000,
+    "imageUrl": "/img/sneakers/sneaker3.jpg"
+  },
+  {
+    "title": "Мужские кроссовки Adidas",
+    "price": 4500,
+    "imageUrl": "/img/sneakers/sneaker4.jpg"
+  },
+  {
+    "title": "Мужские Кроссовки Under Armour Curry 8",
+    "price": 2500,
+    "imageUrl": "/img/sneakers/sneaker5.jpg"
+  },
+  {
+    "title": "Мужские Кроссовки Nike Kyrie 7",
+    "price": 1500,
+    "imageUrl": "/img/sneakers/sneaker6.jpg"
+  }
+  ]
+
+  const arr= [
+	{title: 'Мужские кроссовки Nike Air',
+	 price: '5000',
+	 imageUrl: '/img/sneakers/sneaker1.jpg',
+	},
+	{title: 'Мужские Кроссовки Nike Air Max 270',
+	 price: '7000',
+	 imageUrl: '/img/sneakers/sneaker2.jpg',
+	},
+	{title: 'Мужские Кроссовки Nike Blazer Mid Suede',
+	 price: '6000',
+	 imageUrl: '/img/sneakers/sneaker3.jpg',
+	},
+	{title: 'Мужские кроссовки Adidas',
+	 price: '8000',
+	 imageUrl: '/img/sneakers/sneaker4.jpg',
+	},imageUrl="/img/sneakers/1.jpg"
+];
+
+fetch(' ссылка на бэкенд')
+then((res) =>{
+  return res.json;
+});
+then.(json)=>
+setItems(json)
+
+  }
+}
+)
+
+  

@@ -47,6 +47,8 @@ header {
   }
 }
 
+
+
 .headerRight{
   display: flex;
   justify-content: space-between;
@@ -98,9 +100,18 @@ cursor: pointer;
 }
 
 .search-block{
+  
+  
+  width: 250px;
+  height: 45px;
   border: 1px solid#F3F3F3;
   padding:10px;
   padding: 0, 15px;
+  position: relative;
+
+  .search-img{
+      margin-top: 5px;  
+  }
   input{
     font-size: 16px;
     border: 1px solid #F3F3F3;
@@ -108,7 +119,15 @@ cursor: pointer;
     width: 200px;
     border:none;
   }
+  .clear{
+    position: absolute;
+    width:18px;
+    height: 18px;
+    top: 13px;
+    right: 15px;
+  }
 }
+  
 .overlay{
   position:absolute;
   left: 0;
@@ -123,6 +142,7 @@ cursor: pointer;
   flex: 1;
 }
 .drawer{
+
 display:flex;
 flex-direction: column;
 position: absolute;
@@ -203,7 +223,46 @@ h2{
 }
 //TODO:
 }
-
+.empty{
+  
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  button{
+    width: 245px;
+    height: 55px;
+    margin-top: 40px;
+   
+    
+    &:hover
+    img{
+      transform: translateX(-5px)
+    }
+    
+    img{
+      position: absolute;
+      left:30px;
+      top:20px;
+      transition: transform 0.15 ease;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3{
+    margin-top: 21 px;
+    font-size: 22px;
+  }
+  p{
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.4;
+  color: #000000;
+  }
+  
+  
+}
 .cardItem{
   border: 1px solid #F3F3F3 ;
   border-radius: 20px;
@@ -228,7 +287,7 @@ h2{
     margin: 0;
   }
   b{
-    font-size: 14px;
+    font-size: 18px;
   }
   .removeBtn{
     opacity: 0.5;

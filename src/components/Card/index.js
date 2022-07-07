@@ -30,13 +30,14 @@ function Card({onFavorite, title, imageUrl, price, onPlus}){
 				<b>{price} грн. </b>
 			</div> 
 			
-			<img  className={styles.plus}	onClick={onClickPlus}   src={isAdded ? "/img/btn-checked.svg" : "/img/btn-plus.svg" }  alt="Plus" />
+			<img  className={styles.plus}	onClick={onClickPlus}   
+      src={isAdded ? "/img/btn-checked.svg" : "/img/btn-plus.svg" }  alt="Plus" />
 		
 			
 		</div>
 	</div>
 
-)``
+)
 }
 
 export default Card; //TODO:  Экспортировать с места компонента

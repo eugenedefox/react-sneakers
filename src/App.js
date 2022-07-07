@@ -14,7 +14,7 @@ function App() {
 	const [cartOpened, setCartOpened] = React.useState(false);
 	const [cartItems, setCartItems] = React.useState([]);
 	const [searchValue, setSearchValue] = React.useState('');
-  const [favorites, setFavorites] = React.useState([]);
+  // const [favorites, setFavorites] = React.useState([]);
 
   // CartOpened - Открытие Drawer
 
@@ -44,10 +44,10 @@ function App() {
     setCartItems((prev) => prev.filter(item => item.id !== id));
   }
 
-  const onAddToFavorite = (obj) => {
-    axios.post('https://62be0400bac21839b60ee26f.mockapi.io/favorites', obj)
-    setFavorites ((prev) => [...prev, obj]);
-  }
+  // const onAddToFavorite = (obj) => {
+  //   axios.post('https://62be0400bac21839b60ee26f.mockapi.io/favorites', obj)
+  //   setFavorites ((prev) => [...prev, obj]);
+  // }
 
 // Передаётся в пропс setCardItems на кнопку 
   
